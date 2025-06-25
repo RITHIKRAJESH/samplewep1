@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 75%;
+            height: 100%;
+            background-color: aquamarine;
+            border: 2px dashed black;
+            position: relative;
+            top: 100px;
+        }
+
+        .box{
+            width: 100px;
+            height: 150px;
+            background-color: antiquewhite;
+            border: 2px dotted black;
+            position: relative;
+            left:10px;
+            top:80px;
+            z-index: 2;
+        }
+         .box2{
+            width: 100px;
+            height: 150px;
+            color: white;
+            background-color: rgb(6, 43, 7);
+              border: 2px dotted black;
+              position: relative;
+              z-index: 1;
+            }
+            .navbar{
+                width: 100%;
+                background-color: rgb(149, 53, 239);
+                height: 100px;
+                text-align: center;
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+            }
+            .box3{
+                width: 200px;
+                height: 200px;
+                background-color: chocolate;
+                position: relative;
+            }
+            .sub-1{
+                width: 50px;
+                height: 50px;
+                background-color: aqua;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+    </style>
+</head>
+<body>
+     <div class="navbar">
+        <h1>Navigation bar</h1>
+    </div>
+    <div class="container">
+        <!-- <div class="box">Box 1</div>
+        <div class="box2">Box2</div> -->
+        <div class="box3">
+            <h5>Absolute box</h5>
+            <div class="sub-1">
+                child
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

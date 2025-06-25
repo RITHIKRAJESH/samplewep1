@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Navbar{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(184, 184, 211);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 9999;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            width: 80%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        li:hover{
+            color: rgb(4, 170, 51);
+        }
+        a{
+           text-decoration: none;
+           color: black;
+        }
+
+        .Navbar img{
+            width: 150px;
+        }
+
+        .about,.Contact,.service{
+            position: relative;
+            top: 60px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: antiquewhite;
+            height: 300px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+   <div class="Navbar">
+    <img src="./image/Camerin_folks-removebg-preview.png.bv_resized_ipad.png.bv.webp" alt="">
+     <ul>
+        <li>HOME</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#service">Service</a></li>
+        <li>Login</li>
+     </ul>
+   </div>
+   <div class="about" id="about">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quo sunt eum? Illum repudiandae, asperiores ducimus saepe cumque impedit ratione officiis totam officia aperiam molestias expedita aliquid dolor, consequatur ea.</p>
+   </div>
+   <div class="Contact" id="Contact">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quo id ipsum fuga magni tempore odit laboriosam facilis et. Voluptatem vel magni aut porro est totam laudantium illum voluptatum deleniti.
+   </div>
+   <div class="service" id="service">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, harum, sint obcaecati labore eius autem unde quisquam ipsum voluptas, error velit atque excepturi ipsam quibusdam nihil neque earum qui et.</p>
+   </div>
+</body>
+</html>
